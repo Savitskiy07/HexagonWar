@@ -1,0 +1,18 @@
+{% block content %}
+    <div class="features">
+        <h1>Форма регистрации</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.username }}<br>
+            {{ form.password }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit">Создать аккаунт</button>
+        </form>
+    </div>
+
+    <div>
+        <h4>Уже есть аккаунт?</h3>
+        <p><a href="main/login.html">Войти</a></p>
+    </div>
+
+{% endblock %}

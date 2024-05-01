@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div style="position: absolute; top: 0; right: 0;">
+        <a href="{ % url 'login' % }">Зарегистрироваться</a>
+        <a href="{ % url 'login' % }">Войти</a>
+    </div>
+	<svg id="hexagonSvg">
+    	
+	</svg>	
+	<script src="{% static '../../static/main/js/hexagon.js' %}"></script>
+	<script src="{% static '../../static/main/js/grid.js' %}"></script>
+	
+</body>
+</html>
