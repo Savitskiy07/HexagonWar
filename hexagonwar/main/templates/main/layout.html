@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <p><a href="registration.html">Перейти к форме регистрации</a></p>
+    <div style="position: absolute; top: 0; right: 0;">
+        <a href="{% url 'register' %}">Зарегистрироваться</a>
+        <a href="{% url 'login' %}">Войти</a>
+    </div>*
 	<svg id="hexagonSvg">
     	
-	</svg>
-	<button class="easyTask">Легкое задание</button>
-	<button class="hardTask">Сложное задание</button>
+	</svg>	
 	<script src="{% static '../../static/main/js/hexagon.js' %}"></script>
 	<script src="{% static '../../static/main/js/grid.js' %}"></script>
 	
